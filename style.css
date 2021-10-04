@@ -6,4 +6,99 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+    min-width: 300px;
+    background-color: rgba(221, 221, 221, 0.24);
 }
+
+
+#nav-items{
+    border-bottom: 1px solid black;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+
+.nav-linkx{
+    border: 1px solid rgb(107, 106, 106);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-linkx > a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 25px;
+}
+
+#nav-header{
+    text-align: center;
+    line-height: 1.8em;
+}
+
+#main-doc{
+    padding: 20px;
+    margin-bottom: 100px ;
+    line-height: 1.8;
+}
+
+#main-doc li{
+    margin-top: 20px; 
+}
+
+#main-doc header{
+    text-align: left;
+}
+
+.main-section p{
+    margin: 30px 0;
+}
+
+code{
+    background-color: rgba(112, 112, 107, 0.315);
+    padding: 5px;
+    text-align: left;
+}
+
+@media (min-width: 830px){
+    
+
+    #navbar{
+        height: 100%;
+        min-width: 280px;
+        width: 300px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        border-right: .5px solid black;
+    }
+
+    #nav-items{
+        min-height: 100%;
+        
+    }
+
+    #navbar li{
+        position: relative;
+        width: 100%;
+        border-right: none;
+    }
+
+    #navbar a{
+        display: block;
+        padding: 10px 30px;
+    }
+
+    #main-doc{
+        position: absolute;
+        margin-left: 340px;
+        
+    }
+}
+
